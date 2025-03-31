@@ -132,14 +132,16 @@ int main(){
    //Escolhida o Atributo População para efetuar a comparação
 
    printf("\n#############Comparadores#############\n");
+
+   printf("Escolhida o Atributo População");
+   printf("Carta 1- %s (%s): (%u)\n", Cidade, Estado, Populacao);
+   printf("Carta 2 - %s (%s): (%u)\n", Cidade2, Estado2, Populacao2);
+   if (Populacao > Populacao2){
+       printf("Resultado: Carta %s Venceu!: %u habitantes\n", Cidade, Populacao);
+   }else{
+       printf("Resultado Carta 2 %s Venceu! %u habitantes\n", Cidade2, Populacao2);
+   }   
    
-    printf("Carta 1- %s (%s): (%u)\n", Cidade, Estado, Populacao);
-    printf("Carta 2 - %s (%s): (%u)\n", Cidade2, Estado2, Populacao2);
-    if (Populacao > Populacao2){
-        printf("Resultado: Carta %s Venceu!: %u\n", Cidade, Populacao);
-    }else{
-        printf("Resultado Carta 2 %s Venceu!\n", Cidade2);
-    }   
    
     return 0;
 
